@@ -1,42 +1,3 @@
-<?php  
-   
-    $sign=""; 
-
-   if($_POST){
-    $firstnumber=$_POST[ 'first_number'] ;
-     
-    $secondnumber=$_POST[ 'second_number'] ;  
-    $sign=$_POST['calculate'] ;
-
-  
-   
-   if( $sign =="+"){ 
-        $message = $firstnumber+ $secondnumber  ; 
-    }
-    elseif( $sign =="-"){
-        $message =  $firstnumber- $secondnumber;  ;
-     
-    } 
-    elseif( $sign =="*"){
-        $message =  $firstnumber* $secondnumber;  ;
-     
-    }  
-    elseif( $sign =="/"){
-        $message =  $firstnumber/ $secondnumber;  ;
-     
-    }  
-    elseif( $sign =="%"){
-        $message =  $firstnumber% $secondnumber;  ;
-     
-    }  
-    else{ 
-        " ERROR....NOT FOUND";
-    }
-     
-
-   }
-  ?>
-   
                
 <!doctype html>
 <html lang="en">
@@ -66,24 +27,58 @@
                       <input type="number" name="second_number" id="number" class="form-control" placeholder="" aria-describedby="helpId"> 
                     </div>  
                     <div class="form-group text-center mt-5 mb-5"> 
-                    <input name="calculate" class="btn btn-outline-danger mr-3 " type="button" value="+" > 
-                    <input name="calculate" class="btn btn-outline-danger mr-3" type="button" value="-" > 
-                    <input name="calculate" class="btn btn-outline-danger mr-3" type="button" value="*"> 
-                    <input name="calculate" class="btn btn-outline-danger mr-3" type="button" value="%"> 
-                    <input name="calculate" class="btn btn-outline-danger" type="button" value="/">
+                    <input name="calculate" class="btn btn-outline-danger mr-3 " type="submit" value="+" > 
+                    <input name="calculate" class="btn btn-outline-danger mr-3" type="submit" value="-" > 
+                    <input name="calculate" class="btn btn-outline-danger mr-3" type="submit" value="*"> 
+                    <input name="calculate" class="btn btn-outline-danger mr-3" type="submit" value="%"> 
+                    <input name="calculate" class="btn btn-outline-danger" type="submit" value="/">
                     </div>
+                   
 
-                   
-                    <div class="form-group">
-                        <button class="btn btn-outline-danger rounded form-control"> Calculate </button>
-                    </div>
                 </form>
-                <?php 
-                   if($_POST){
-                     echo $message;
-                     }
-                   
-                ?> 
+
+                <?php  
+   
+    $sign="";
+    
+   if(isset($_POST['calculate'])){
+    $firstnumber=$_POST['first_number'] ;
+    $secondnumber=$_POST['second_number'] ;  
+    $sign=$_POST['calculate'] ;
+   
+   if( $sign =="+"){ 
+        $result = $firstnumber+ $secondnumber  ; 
+        $message="<div class='alert alert-success'>".$result."</div>";
+        echo $message;
+    }
+    elseif( $sign =="-"){
+        $result =  $firstnumber- $secondnumber; 
+        $message="<div class='alert alert-success'>".$result."</div>";
+        echo $message;
+    } 
+    elseif( $sign =="*"){
+        $result =  $firstnumber* $secondnumber; 
+        $message="<div class='alert alert-success'>".$result."</div>";
+        echo $message;
+    }  
+    elseif( $sign =="/"){
+        $result =  $firstnumber/ $secondnumber;  
+        $message="<div class='alert alert-success'>".$result."</div>";
+        echo $message;
+    }  
+    elseif( $sign =="%"){
+        $result =  $firstnumber% $secondnumber; 
+        $message="<div class='alert alert-success'>".$result."</div>";
+        echo $message;
+    }  
+    else{ 
+        " ERROR....NOT FOUND";
+    }
+     
+
+   }
+  ?>
+               
             </div>
         </div>
       </div>

@@ -62,7 +62,7 @@ if($_POST){
     </tbody>
   </table>";
    }
-}
+  }
 ?>
 <!doctype html>
 <html lang="en">

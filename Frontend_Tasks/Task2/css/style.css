@@ -1,0 +1,138 @@
+*
+{
+    padding: 0px ;
+    margin: 0px ;
+}
+body
+{
+    background-color: rgb(225, 231, 233);
+}
+
+/*   start cover  */ 
+.cover
+{
+    height: 700px ;
+    background-image: url(../img/cover.jpg) ;
+}
+button
+{
+    margin-left: 50%;
+    margin-top: 26%;
+    width: 140px ;
+    padding: 12px 18px ;
+    color: white;
+    background-color: rgb(104, 49, 49);
+    outline: none ;
+    border: none ;
+    cursor: pointer;
+    border-radius: 10px;
+}
+a
+{
+    color: white;
+    text-decoration: none ;
+}
+/*   end cover  */ 
+
+
+/*  start table  */ 
+table 
+{
+    margin: 50px auto ;
+    background-color: rgb(109, 139, 179) ; 
+}
+table caption
+{
+    padding-bottom: 30px ;
+    color: rgb(66, 69, 70);
+    font-size: 40px ;
+}
+table img
+{
+    width: 300px ;
+    height: 300px ;
+}
+/*  end table   */ 
+
+
+/*   start details   */ 
+.details
+{
+    width : 70% ; 
+    margin: auto ;
+    margin-top: 70px;
+}
+.details .image
+{
+    width: 50% ;
+    float: left;
+}
+.details .image img 
+{
+    height: 600px;
+    width: 90%;
+}
+.details .text
+{
+    width: 50% ;
+    float: left;
+    padding-top: 40px;
+}
+.details p
+{
+    font-size: 30px;
+}
+.details span
+{
+    font-size: 25px;
+    color: rgb(70, 75, 75);
+}
+.details .text button
+{
+    margin-top: 20px ;
+}
+/*    end details  */
+
+
+/* start form */
+ 
+form
+{   
+    background-color: rgb(131, 138, 141);
+    margin-left: 25%;
+    width: 700px; 
+    font-size: 35px;
+    color: rgb(3, 5, 5);
+    border-radius: 20px;
+} 
+form p
+{ 
+    margin-left: 35%; 
+    padding-top: 20px;
+    color: rgb(80, 22, 27); 
+    font-size: 50px;
+} 
+form input
+{  
+    margin-left: 200px;
+    height: 45px;
+    width: 300px; 
+    font-size: 25px; 
+    color: rgb(63, 115, 179);
+    border-radius: 10px ;
+    outline: none ;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border : none 
+}   
+form label
+{ 
+    margin-left: 20px;
+} 
+form button
+{
+    margin-top: 10px;
+    margin-left: 40% ;
+    margin-bottom: 20px;
+}
+/* end form */ 
